@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HDI Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Human Development Index Predictor</h1>
+
+    <form action="/predict" method="POST">
+
+        <input type="number" step="any" name="life" placeholder="Life Expectancy at Birth" required>
+
+        <input type="number" step="any" name="expected" placeholder="Expected Years of Education" required>
+
+        <input type="number" step="any" name="mean" placeholder="Mean Years of Education" required>
+
+        <input type="number" step="any" name="gni" placeholder="GNI Per Capita" required>
+
+        <button type="submit">Predict</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
