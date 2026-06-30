@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HDI Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="navbar">
+    <a href="/">Home</a>
+    <a href="/analysis">Analysis</a>
+    <a href="/about">About</a>
+</div>
+
+<div class="container">
+
+<h1>HDI Data Analysis</h1>
+<h2>Correlation Heatmap</h2>
+<img src="{{ url_for('static', filename='images/heatmap.png') }}">
+
+<h2>HDI Distribution</h2>
+<img src="{{ url_for('static', filename='images/distribution.png') }}">
+
+<h2>HDI vs GNI</h2>
+<img src="{{ url_for('static', filename='images/scatter.png') }}">
+
+<h2>Pair Plot</h2>
+<img src="{{ url_for('static', filename='images/pairplot.png') }}">
+
+<h2>Strip Plot</h2>
+<img src="{{ url_for('static', filename='images/stripplot.png') }}">
+
+
+<br><br>
+
+<a href="/">
+<button>Back to Predictor</button>
+</a>
+
+</div>
+<footer>
+<p>HDI Predictor | Machine Learning Internship Project | 2026</p>
+</footer>
+</body>
+</html>

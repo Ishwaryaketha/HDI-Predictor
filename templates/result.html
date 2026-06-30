@@ -5,20 +5,44 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-
+<div class="navbar">
+    <a href="/">Home</a>
+    <a href="/analysis">Analysis</a>
+    <a href="/about">About</a>
+</div>
 <div class="container">
+    <div class="result-box">
 
-    <h1>Prediction Result</h1>
+<h2>Predicted HDI Score</h2>
 
-    <h2>Predicted HDI: {{ prediction }}</h2>
+<h1>{{ prediction }}</h1>
 
-    <h3>{{ category }}</h3>
+<h3>{{ category }}</h3>
+
+</div>
 
     <a href="/">
         <button>Predict Again</button>
     </a>
 
-</div>
+    <hr>
 
+<h3>Model Used</h3>
+
+<p>Linear Regression</p>
+
+<p>Features Used</p>
+
+<ul>
+<li>Life Expectancy</li>
+<li>Expected Years of Education</li>
+<li>Mean Years of Education</li>
+<li>GNI Per Capita</li>
+</ul>
+
+</div>
+<footer>
+<p>HDI Predictor | Machine Learning Internship Project | 2026</p>
+</footer>
 </body>
 </html>
